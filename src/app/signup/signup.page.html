@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input [(ngModel)]="username" placeholder="Username"></ion-input>
+  <ion-input
+    [(ngModel)]="password"
+    placeholder="Password"
+    type="password"
+  ></ion-input>
+  <ion-input
+    [(ngModel)]="image"
+    placeholder="https://..."
+    type="url"
+  ></ion-input>
+  <ion-button (click)="handleClick()"> Sign Up </ion-button>
+</ion-content>

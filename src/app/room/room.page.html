@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Messages</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let message of messageArray">
+      <ion-label>
+        {{message.message}} {{message.userId}}
+      </ion-label>
+    </ion-item>
+    <ion-input [(ngModel)]="message" placeholder="message"></ion-input>
+    <ion-button (click)="handleClick(message)"> Send message </ion-button>
+  </ion-list>
+</ion-content>
